@@ -1,0 +1,61 @@
+.orders-component {
+  padding: 20px;
+  max-width: 800px; /* Max width for the content area */
+  margin: 50px auto; /* Center the component */
+  background: #c7d8e4; /* Background for content area */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.orders-component h2 {
+  font-size: 36px;
+  font-weight: 600; /* Slightly bolder */
+  color: #333; /* Dark color for contrast */
+  text-align: center; /* Center the title */
+  margin: 20px 0; /* Margin for spacing */
+}
+
+.orders-component table {
+  width: 100%; /* Table width */
+  margin-bottom: 20px; /* Margin below the table */
+  border-collapse: collapse; /* Collapse borders */
+  border-color: #333;
+}
+
+.orders-component th {
+  text-align: left; /* Align text to left */
+  padding: 12px 16px; /* Padding for table headers */
+  background-color: #f5f5f5; /* Background for headers */
+  border-bottom: 1px solid #eaeaea; /* Border for separation */
+}
+
+.orders-component td {
+  padding: 12px 16px; /* Padding for table cells */
+  text-align: left; /* Align text to left */
+  border-bottom: 1px solid #eaeaea; /* Border for separation */
+}
+
+.orders-component button {
+  border-radius: 20px;
+  background-color: #674836; /* Friendly color for the action button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px auto; /* Center button below table */
+  display: block; /* Block display to allow auto margins to center */
+}
+
+.orders-component button:hover {
+  background-color: #f50a0d; /* Darker color on hover */
+}
+
+@media (min-width: 768px) {
+  .orders-component {
+    padding: 40px; /* More padding on larger screens */
+    margin-top: 60px; /* More margin on top */
+  }
+  
+  /* If you have additional styling for larger screens, add them here */
+}

@@ -1,0 +1,148 @@
+.cart-component {
+  padding: 0 20px;
+  font-size: 18px;
+  font-family: Georgia;
+}
+
+.cart-component h2 {
+  margin: 50px 0 20px 0;
+  font-size: 36px;
+  font-weight: normal;
+  font-family: Georgia;
+}
+
+.cart-component th,
+.cart-component td {
+  text-align: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.cart-component td button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #CC8B18;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.cart-component label {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cart-component input {
+  border-radius: 5px;
+  border: 1px solid rgba(151, 151, 151, 1);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  padding: 4px;
+  margin-top: 5px;
+}
+
+.cart-component form button {
+  border-radius: 26px;
+  background-color: #674836;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 43px;
+  font-size: 21px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.cart-component form button:disabled {
+  opacity: 20%;
+  cursor: auto;
+}
+
+.cart-component form button:hover:enabled {
+  opacity: 75%;
+}
+
+.cart-component .warning {
+  margin-top: 5px;
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .cart-component {
+    padding: 0 50px;
+  }
+
+  .cart-component input {
+    width: 50%;
+  }
+}
+/* Improving overall layout and typography */
+.cart-component {
+  max-width: 500px; /* Limiting max width for better readability */
+  margin: 0 auto; /* Centering the cart component */
+  background: #c7d8e4; /* Optional: Set a background color */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Add a subtle shadow to lift the cart */
+  border-radius: 8px; /* Optional: Round the corners */
+  overflow: hidden; /* Ensures the inner content respects border-radius */
+}
+
+/* Table styles for a cleaner look */
+.cart-component table {
+  width: 100%; /* Full-width table */
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Add space between rows */
+}
+
+/* Headings */
+.cart-component h2 {
+  text-align: center; /* Center-align the heading */
+  padding-top: 30px;
+}
+
+/* Button styling */
+.cart-component td button {
+  transition: background-color 0.3s ease; /* Smoother transition for button background */
+}
+
+.cart-component td button:hover {
+  background: #E09C24; /* A lighter shade for the hover state */
+}
+
+/* Input styling */
+.cart-component input[type="text"],
+.cart-component input[type="number"] {
+  width: calc(100% - 10px); /* Full width minus padding */
+  padding: 8px;
+}
+
+/* Checkout button improvements */
+.cart-component form button {
+  display: block; /* Block display for full width */
+  width: calc(100% - 16px); /* Full width minus padding */
+  margin: 20px auto; /* Center the button with automatic horizontal margins */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: Add a shadow to make button stand out */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cart-component {
+    padding: 0 20px;
+  }
+
+  .cart-component input[type="text"],
+  .cart-component input[type="number"] {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
